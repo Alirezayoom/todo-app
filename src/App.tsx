@@ -1,5 +1,11 @@
+import TodoList from "./components/TodoList";
+
 function App() {
-  return <div className="bg-red-400">hi</div>;
+  return (
+    <div className="bg-transparent">
+      <TodoList />
+    </div>
+  );
 }
 
 export default App;
