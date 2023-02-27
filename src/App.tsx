@@ -26,6 +26,7 @@ function App() {
 
   return (
     <div className="w-[500px] mx-auto grid ">
+      <h1 className="text-3xl mx-auto mt-12 font-bold">To-Do Manager</h1>
       <NewTodo onAddTodo={addHandler} />
       <TodoList items={todos} onDelete={deleteHandler} />
     </div>
