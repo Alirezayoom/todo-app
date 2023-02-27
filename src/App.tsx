@@ -1,3 +1,4 @@
+import NewTodo from "./components/NewTodo";
 import TodoList from "./components/TodoList";
 
 function App() {
@@ -5,6 +6,7 @@ function App() {
 
   return (
     <div className="bg-transparent">
+      <NewTodo />
       <TodoList items={todos} />
     </div>
   );
