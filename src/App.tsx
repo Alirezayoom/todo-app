@@ -25,7 +25,7 @@ function App() {
   };
 
   return (
-    <div className="max-w-full grid justify-center">
+    <div className="w-[500px] mx-auto grid ">
       <NewTodo onAddTodo={addHandler} />
       <TodoList items={todos} onDelete={deleteHandler} />
     </div>
