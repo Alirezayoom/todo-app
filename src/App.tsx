@@ -12,7 +12,10 @@ function App() {
 
   const addHandler = (text: string) => {
     console.log(text);
-    setTodos([{ id: Math.random().toString(), text: text }]);
+    setTodos((prevState) => [
+      ...prevState,
+      { id: Math.random().toString(), text: text },
+    ]);
   };
 
   return (
