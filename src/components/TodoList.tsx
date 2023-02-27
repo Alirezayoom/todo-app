@@ -1,12 +1,12 @@
 interface TodoListTypes {
-  items: { id: number; task: string }[];
+  items: { id: string; text: string }[];
 }
 
 export default function TodoList(props: TodoListTypes) {
   return (
     <ul>
       {props.items.map((todo) => (
-        <li key={todo.id}>{todo.task}</li>
+        <li key={todo.id}>{todo.text}</li>
       ))}
     </ul>
   );
