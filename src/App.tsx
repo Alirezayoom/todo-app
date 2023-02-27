@@ -5,7 +5,7 @@ function App() {
   const todos = [{ id: 1, task: "practice typescript" }];
 
   return (
-    <div className="bg-transparent">
+    <div className="max-w-full grid justify-center">
       <NewTodo />
       <TodoList items={todos} />
     </div>
