@@ -4,9 +4,13 @@ import TodoList from "./components/TodoList";
 function App() {
   const todos = [{ id: 1, task: "practice typescript" }];
 
+  const addHandler = (text: string) => {
+    console.log(text);
+  };
+
   return (
     <div className="max-w-full grid justify-center">
-      <NewTodo />
+      <NewTodo onAddTodo={addHandler} />
       <TodoList items={todos} />
     </div>
   );
