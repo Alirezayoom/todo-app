@@ -1,9 +1,11 @@
-const todos = [{ id: 1, task: "practice typescript" }];
+interface TodoListTypes {
+  items: { id: number; task: string }[];
+}
 
-export default function TodoList() {
+export default function TodoList(props: TodoListTypes) {
   return (
     <ul>
-      {todos.map((todo) => (
+      {props.items.map((todo) => (
         <li key={todo.id}>{todo.task}</li>
       ))}
     </ul>
